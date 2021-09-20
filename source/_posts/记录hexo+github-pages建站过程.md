@@ -17,13 +17,13 @@ categories: hexo
 ### linux
 linux直接用包管理器安装`nodejs`或`nodejs-lts`就彳亍了（alpine的apk~~脑子抽了~~为了精简，还要手动`apk add npm`），检查一下
 (不会吧不会吧，你竟然不会用包管理器)
-```sh
+```zsh
 # on ubuntu
-$ apt install nodejs-lts
+apt install nodejs-lts
 #省略安装过程
-$ npm -v
+npm -v
 6.14.15
-$ node -v
+node -v
 v14.17.6
 ```
 （这个版本过高可能会造成一些警告（或错误），以后再处理（“程序只要能跑，有warning也不看”(doge)））
@@ -33,7 +33,7 @@ v14.17.6
 下载的文件应名为`node-v14.17.6-x64.msi`，运行它，一路点next(前几步有个同意许可协议，把选择框点上就行了，可以选择安装路径)
 ![node-v14.17.6-x64.msi](/images/node-v14.17.6-x64.msi-01.png)
 安装好后打开`cmd`，运行`npm -v`和`node -v`
-```sh
+```zsh
 C:\Windows\System32>npm -v
 6.14.10
 C:\Windows\System32>node -v
