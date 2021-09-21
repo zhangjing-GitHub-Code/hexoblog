@@ -141,3 +141,14 @@ import json
 print("hello wolrd")
 exit()
 ```
+----
+# 部署到Github
+## 注册账号
+(如果已有账号可以去[下一节](#登录))进入[github.com](https://github.com/)，若加载超时，可尝试科 学上 网或多试试~~[github.com.cnpmjs.org](https://github.com.cnpmjs.org) (没试过，应该可以doge)~~。
+进去后在左边的框里(`Email address`)填入你的电子邮箱，点绿色按钮`sing up for github`，在下个页面根据提示填信息(读不懂英文也可以用翻译吧)，也可以点右上角的sign up，注册后自动登录，去[创建仓库](#创建仓库)。
+## 登录
+点右上角sign in(手机:点右上角三横，点右下方sign in)
+## 创建仓库
+电脑点右上角加号旁的小三角，点包含`repository`的那个，手机先点左上角三横，再点账户名称，选择repositories，再点`new`。
+仓库名是`github用户名.github.io`，如`abc.github.io`，创建好后，点击settings(手机将code那一栏往左划)，再点pages，如果显示没打开就点source，选择master(一般是这个，选不是none的那个)。
+仓库创建好后将地址记下(

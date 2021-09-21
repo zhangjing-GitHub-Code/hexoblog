@@ -103,12 +103,12 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+  type: 'git'
   repo: git@github.com:zhangjing-GitHub-Code/zhangjing-GitHub-Code.github.io.git
   branch: master
+
 symbols_count_time:
   symbols: true #是否统计字数
-  time: false #是否统计阅读时长
+  time: true #是否统计阅读时长
   total_symbols: true #是否统计总字数
   total_time: false #是否统计总阅读时长
-
