@@ -10,7 +10,7 @@
 override: false
 
 # Console reminder if new version released.
-reminder: false
+reminder: true
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
@@ -31,7 +31,7 @@ custom_file_path:
   #bodyEnd: source/_data/body-end.swig
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  style: themes/next/source/_data/style.styl
 
 
 # ---------------------------------------------------------------
@@ -256,13 +256,30 @@ post_meta:
 
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+#symbols_count_time:
+#  separated_meta: true
+#  item_text_post: true
+#  item_text_total: false
 symbols_count_time:
-  separated_meta: true
-  item_text_post: true
-  item_text_total: false
-
+  separated_meta: true #分隔符|
+  item_text_post: true #是否统计站点总字数
+  item_text_total: true #是否同级文章总字数
+  awl: 2 #平均每个字符的长度
+  wpm: 200 #words per minute
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: fa fa-tag
+show_category_count: true
+
+busuanzi_count:
+  enable: true  #是否开启不蒜子统计功能
+  post_visitors: true #是否统计总访客数
+  post_visitors_icon: fa fa-user  #访客数图标为人像
+  total_visitors: true #是否统计总访客数
+  total_visitors_icon: fa fa-user  #访客数图标为人像
+  total_views: true #是否同级总访问数
+  total_views_icon: fa fa-eye #访问数图标为眼睛
+  post_views: true #是否统计文章访问数
+  post_views_icon: fa fa-book #访问数图标为眼睛
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
@@ -356,34 +373,34 @@ android_chrome_color: "#222"
 
 # Custom Logo (Do not support scheme Mist)
 custom_logo: #/uploads/custom-logo.jpg
-
+#custom_highlight_theme: prettify
 codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: normal
+  highlight_theme: solarized
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
-    style:
+    style: mac
 
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: true
+  sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
   enable: true 
   # Available values: top | bottom
-  position: bottom
-  color: "#67c6c0"
-  height: 6px
+  position: top
+  color: "#37c6c0"
+  height: 5px
 
 # Bookmark Support
 bookmark:
@@ -718,14 +735,14 @@ firestore:
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
-busuanzi_count:
-  enable: false
-  total_visitors: true
-  total_visitors_icon: fa fa-user
-  total_views: true
-  total_views_icon: fa fa-eye
-  post_views: true
-  post_views_icon: fa fa-eye
+#busuanzi_count:
+#  enable: false
+#  total_visitors: true
+#  total_visitors_icon: fa fa-user
+#  total_views: true
+#  total_views_icon: fa fa-eye
+#  post_views: true
+#  post_views_icon: fa fa-eye
 
 
 # ---------------------------------------------------------------
@@ -919,7 +936,7 @@ vendors:
   # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
   # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
-  jquery:
+  jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquer     y.min.js
   fancybox:
   fancybox_css:
 
@@ -1004,10 +1021,10 @@ vendors:
 canvas_nest: # 网络背景
   enable: true
   onmobile: true # display on mobile or not
-  color: '255,50,200' # RGB values, use ',' to separate
-  opacity: 1 # the opacity of line: 0~1
+  color: '200,80,255' # RGB values, use ',' to separate
+  opacity: 0.9 # the opacity of line: 0~1
   zIndex: -1 # z-index property of the background
-  count: 150 # the number of lines
+  count: 80 # the number of lines
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
@@ -1031,11 +1048,13 @@ save_scroll: true
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt: 
   enable: false #自动截取一定程度的摘要
-  length: 150
+  length: 50
 # Read more button
 # If true, the read more button would be displayed in excerpt section.
 read_more_btn: true #显示阅读全文按钮
-
+cursor_effect:
+    enabled: true
+    type: text #explosion
 # Assets
 css: css
 js: js
