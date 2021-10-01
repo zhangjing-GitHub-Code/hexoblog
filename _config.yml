@@ -112,3 +112,30 @@ symbols_count_time:
   time: true #是否统计阅读时长
   total_symbols: true #是否统计总字数
   total_time: false #是否统计总阅读时长
+
+markdown_it_plus:
+    highlight: true
+    html: true
+    xhtmlOut: true
+    breaks: true
+    langPrefix:
+    linkify: true
+    typographer:
+    quotes: “”‘’
+    plugins:
+      - plugin:
+        name: markdown-it-katex
+        enable: true
+      - plugin:
+        name: markdown-it-mark
+        enable: false
+math:
+    enable: true  #默认为false
+    per_page: true
+    engine: mathjax   #两种方式  mathjax / katex
+    mathjax:
+      cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML  #默认 这里大家根据自己需求
+    katex:
+      cdn: //cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css   #默认
+mathjax:
+      enable: true
