@@ -1054,7 +1054,7 @@ auto_excerpt:
 read_more_btn: true #显示阅读全文按钮
 cursor_effect:
     enabled: true
-    type: text #explosion
+    type: love #explosion
 # Assets
 css: css
 js: js
