@@ -1,7 +1,7 @@
 ---
 title: 记录我的github token
 date: 2021-10-17 16:09:18
-password: 62a4ab31c6b49176ba805d1b2b94955a4d62cc22d9844ec8140bfc08035f3294
+password: c3607492463d97952d69dbebb2d01aa204842dd1a19af8e075b269a50853b6d5
 tags: 
 - github
 ---
