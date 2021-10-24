@@ -17,7 +17,6 @@ categories: hexo
 ### linux
 linux直接用包管理器安装`nodejs`或`nodejs-lts`就彳亍了（alpine的apk~~脑子抽了~~为了精简，还要手动`apk add npm`），检查一下。
 (不会吧不会吧，你竟然不会用包管理器)
-<?prettify?>
 ```zsh
 # on ubuntu
 $ apt install nodejs-lts
@@ -42,12 +41,6 @@ v14.15.4
 ```
 ## 安装Hexo
 找一个~~风水宝地~~你认为合适的地方，比如在`~/hexo`目录下(linux)，cd到这里。
-<?prettify?>
-<pre class="prettyprint linenums">
-ls awm
-wdnmd
-$ bash ls
-</pre>
 ```bash
 $ cd ~
 $ mkdir hexo
@@ -136,11 +129,13 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
 像这样（没做修改默认是这样）：
 ![默认页面](/images/hexo-default-webserver-page.png)
+
 ```python
 import json
 print("hello wolrd")
 exit()
 ```
+
 ----
 # 部署到Github
 ## 注册账号
