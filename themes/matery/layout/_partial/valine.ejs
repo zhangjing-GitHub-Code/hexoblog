@@ -260,6 +260,7 @@
         placeholder: '<%= theme.valine.placeholder %>'
     });
 </script>
+<%- partial('_partial/back-comment.ejs') %>
 
 <!--酷Q推送-->
 <% if (theme.valine.coolpushkey && theme.valine.coolpushkey > 1) { %>
@@ -304,3 +305,4 @@
   })
 </script>
 <% } %>
+
