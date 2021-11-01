@@ -14,9 +14,10 @@
 
     <%- partial('_partial/search') %>
 
-    <%- partial('_partial/back-comment.ejs') %>
-    <%- partial('_partial/back-top') %>
-
+    <!-- if (post.comments) { -->
+        <%- partial('_partial/back-comment.ejs') %>
+	<!-- } -->
+   	<%- partial('_partial/back-top') %>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.materialize) %>"></script>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.masonry) %>"></script>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.aos) %>"></script>
