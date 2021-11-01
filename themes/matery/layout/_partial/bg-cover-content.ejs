@@ -15,11 +15,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            <% theme.subtitle.sub.forEach(function(item){%>
-                                "<%= item %>",
-                            <% }) %>
-                        ],
+                        strings: ['<%= theme.subtitle.sub1 %>','<%= theme.subtitle.sub2 %>'],
                         startDelay: <%= theme.subtitle.startDelay %>,
                         typeSpeed: <%= theme.subtitle.typeSpeed %>,
                         loop: <%= theme.subtitle.loop %>,
@@ -37,14 +33,12 @@
 
 <% if (theme.banner.enable) { %>
 <script>
-    /* 每天切换 banner 图.  Switch banner image every day.
+    // 每天切换 banner 图.  Switch banner image every day.
     var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + new Date().getDay() + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 <% } else { %>
 <script>
-    $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
-    */
-    $('.bg-cover').css('background-image', 'url(https://bing.rthe.net/wallpaper)');
+        $('.bg-cover').css('background-image', 'url(https://api.kdcc.cn/img/)');
 </script>
 <% } %>
