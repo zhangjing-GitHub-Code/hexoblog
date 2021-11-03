@@ -694,8 +694,8 @@ live2d:
     use: live2d-widget-model-wanko
   display:
     position: right
-    width: 300
-    height: 400
+    width: 265
+    height: 375
   mobile:
     show: true
   react:
