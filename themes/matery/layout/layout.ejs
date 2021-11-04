@@ -152,7 +152,9 @@
     <% if (theme.instantpage.enable) { %>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.instantpage) %>" type="module"></script>
     <% } %>
-
+    <% if (theme.live2d.enable) { %> 
+        <%- partial('_partial/live2d.ejs') %> 
+    <% } %>
 </body>
 
 </html>

@@ -86,5 +86,7 @@
     <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.mycss) %>">
 
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.jquery) %>"></script>
-
+    <% if (theme.live2d && theme.live2d.enable) { %>
+        <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for('/js/live2d_assets/waifu.css') %>">
+    <% } %>
 </head>
