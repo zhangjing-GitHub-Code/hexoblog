@@ -2148,7 +2148,7 @@ p.search-result-summary{
 .comment-scroll {
     position: fixed;
     right: 15px;
-    bottom: 135px;
+    bottom: 75px;
     padding-top: 15px;
     margin-bottom: 0;
     z-index: 998;
