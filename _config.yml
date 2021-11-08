@@ -165,3 +165,7 @@ live2d:
     show: true
   react:
     opacity: 0.8
+
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
