@@ -9,10 +9,12 @@ tags:
 我要《感谢》Github，这\*\*要我用authtoken来登录，在这里记录yee下我的token
 <!--more-->
 # personal token here:↓
-<!--```
+
+### For safety problems, the token will not be shown.
+
+```
 name : FuckAtGitHub_IWillMakeMyTokenPublic
-token : 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
+token : 
 permission : full control (selected all)
-```-->
-<!--![](/images/MyFullcontrolToken_FuckGithub.png)
-![](/记录我的github-token/20211017041803197.png)-->
+```
+
