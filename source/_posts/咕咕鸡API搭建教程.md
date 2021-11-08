@@ -27,9 +27,9 @@ tags:
 
 会提示到注册的电子邮箱去激活，激活后用注册的电子邮箱和密码[登录](http://open.memobird.cn/user/index)，依旧有一个验证码。
 
-登录进去后好像会有一个填写API信息（我的账号是一两年前申请的，有点不清楚......（捂脸）），按需求填写，申请后（可能有较短的审核期）到[用户主页](http://open.memobird.cn/User/Main)，查看`Access_Key`，待会要用（__*_注意，这个Ak很重要，相当于是你申请的API的使用密码，不能泄露_*__)。
+登录进去后好像会有一个填写API信息（我的账号是一两年前申请的，有点不清楚......（捂脸）），按需求填写，申请后（可能有较短的审核期）到[用户主页](http://open.memobird.cn/User/Main)，查看`Access_Key`，待会要用（***注意，这个Ak很重要，相当于是你申请的API的使用密码，不能泄露***)。
 
-这里还要先绑定用户，http地址：[http://open.memobird.cn/home/setuserbind](http://open.memobird.cn/home/setuserbind)
+这里还要先绑定用户，网络地址：[http://open.memobird.cn/home/setuserbind](http://open.memobird.cn/home/setuserbind)
 
 这里有4个参数（就是网址后面加个`?`，后面再跟的东西是参数），分别为：
 
