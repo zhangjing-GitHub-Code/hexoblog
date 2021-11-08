@@ -11,7 +11,7 @@ The document was created by Typora.
 
 __*HeLlO*__ $KaTeX is GOOOGDdd \cfrac{114}{514}$
 
-```c++
+```cpp
 //过河卒
 #include <cstdio>
 #include <iostream>
@@ -51,5 +51,6 @@ int main(){
 }
 ```
 
-
-
+> 山本，我囸你仙人~
+>
+> 给句痛♂快话，投降不投降？
