@@ -1,5 +1,6 @@
 ---
 title: An article
+abbrlink: dd7f
 date: 2021-09-18 21:07:34
 tags:
 ---

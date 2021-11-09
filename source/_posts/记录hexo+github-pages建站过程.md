@@ -1,12 +1,13 @@
 ---
 title: 记录hexo+github pages建站过程
-date: 2021-09-20 07:41:07
 tags:
-- hexo
-- github
-- 博客
-- 建站
+  - hexo
+  - github
+  - 博客
+  - 建站
 categories: hexo
+abbrlink: 1e8d
+date: 2021-09-20 07:41:07
 ---
 # 前言
 我~~脑子没抽！~~搭了一个hexo+GitHub Pages的博客站，想记录下建站过程，“友好”的帮助其他人分享常见错误。

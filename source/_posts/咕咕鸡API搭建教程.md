@@ -1,6 +1,7 @@
 ---
 title: 咕咕鸡API搭建教程
 mathjax: false
+abbrlink: d194
 date: 2021-11-08 19:38:00
 tags:
 ---

@@ -1,8 +1,9 @@
 ---
 title: Hello-Typorld
 mathjax: true
-tags: 
-- 测试
+tags:
+  - 测试
+abbrlink: e48b
 date: 2021-09-22 10:15:20
 ---
 ## What !?

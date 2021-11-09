@@ -14,7 +14,8 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://zhangjing-github-code.github.io
-permalink: :year/:month/:day/:title/
+#permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -110,10 +111,10 @@ theme: matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+- type: git
   repo: git@github.com:zhangjing-GitHub-Code/zhangjing-GitHub-Code.github.io.git
   branch: master
-
+- type: baidu_url_submitter
 symbols_count_time:
   symbols: true #是否统计字数
   time: true #是否统计阅读时长
@@ -166,6 +167,19 @@ live2d:
   react:
     opacity: 0.8
 
-permalink_pinyin:
-  enable: true
-  separator: '-' # default: '-'
+#permalink_pinyin:
+  #enable: true
+  #separator: '-' # default: '-'
+# 自动生成sitemap
+sitemap: 
+  path: sitemap.xml
+baidusitemap: 
+  path: baidusitemap.xml
+baidu_url_submit:
+  count: 80 # 提交最新的一个链接
+  host: https://zhangjing-github-code.github.io # 在百度资源搜索平台中注册的域名
+  token: k5Ho7UQV9EZSuizW # 请注意这是推送秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+abbrlink:
+  alg: crc16  #算法选项：crc16、crc32，区别见之前的文章，这里默认为crc16丨crc32比crc16复杂一点，长一点
+  rep: hex    #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
