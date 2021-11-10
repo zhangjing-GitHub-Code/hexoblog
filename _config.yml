@@ -183,3 +183,7 @@ baidu_url_submit:
 abbrlink:
   alg: crc16  #算法选项：crc16、crc32，区别见之前的文章，这里默认为crc16丨crc32比crc16复杂一点，长一点
   rep: hex    #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
+lazyload:
+    enable: true 
+    onlypost: false  # 是否只对文章的图片做懒加载
+    # loadingImg: # eg ./images/loading.gif
