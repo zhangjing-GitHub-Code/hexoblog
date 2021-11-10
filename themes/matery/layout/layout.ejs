@@ -67,7 +67,7 @@
     <% } %>
 
     <%- partial('_partial/baidu-analytics') %>
-    <%- partial('_partial/baidu-push') %>
+    <%- partial('_partial/baidu-push.ejs') %>
     <% if (theme.clicklove.enable) { %>
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.clicklove) %>" async="async"></script>
     <% } %>
