@@ -114,7 +114,7 @@ deploy:
 - type: git
   repo: git@github.com:zhangjing-GitHub-Code/zhangjing-GitHub-Code.github.io.git
   branch: master
-- type: baidu_url_submitter
+ # - type: baidu_url_submitter
 symbols_count_time:
   symbols: true #是否统计字数
   time: true #是否统计阅读时长
@@ -170,20 +170,24 @@ live2d:
 #permalink_pinyin:
   #enable: true
   #separator: '-' # default: '-'
+
+Plugins:
+  - hexo-generator-baidu-sitemap
+  - hexo-generator-sitemap
 # 自动生成sitemap
 sitemap: 
-  path: sitemap.xml
+  path: site_maps.xml
 baidusitemap: 
-  path: baidusitemap.xml
+  path: sitemaps/baidusitemap.xml
 baidu_url_submit:
   count: 80 # 提交最新的一个链接
   host: https://zhangjing-github-code.github.io # 在百度资源搜索平台中注册的域名
   token: k5Ho7UQV9EZSuizW # 请注意这是推送秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 abbrlink:
-  alg: crc16  #算法选项：crc16、crc32，区别见之前的文章，这里默认为crc16丨crc32比crc16复杂一点，长一点
+  alg: crc32  #算法选项：crc16、crc32，区别见之前的文章，这里默认为crc16丨crc32比crc16复杂一点，长一点
   rep: hex    #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
 lazyload:
-    enable: true 
+    enable: false 
     onlypost: false  # 是否只对文章的图片做懒加载
     # loadingImg: # eg ./images/loading.gif
