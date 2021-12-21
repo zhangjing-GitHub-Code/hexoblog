@@ -584,10 +584,11 @@ subtitle:
   backSpeed: 50 # 删除速度
   sub:
     - The Quieter You Become, The More You Are Able To Hear – Kali Linux
-      #    - 以势服人口，以理服人心。
+    - 以势服人口，以理服人心。
     - 从来没有真正的绝境, 只有心灵的迷途
       # - Never really desperate, only the lost of the soul
       # - 老实人常在，脱空人常败。
+    - Talk is cheap, show me the code.
 
 # 手机二级菜单.
 navMenu:
