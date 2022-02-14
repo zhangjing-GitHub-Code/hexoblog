@@ -14,7 +14,7 @@
   "dependencies": {
     "acorn": "^6.4.2",
     "ejs": "^2.7.4",
-    "eslint": "^7.32.0",
+    "eslint": "^8.9.0",
     "hexo": "^5.4.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-baidu-url-submit": "0.0.6",
