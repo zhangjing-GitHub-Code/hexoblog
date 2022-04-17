@@ -1,11 +1,12 @@
 ---
 title: pubg newstate 安装教程
 mathjax: falsee
-date: 2021-11-12 22:22:00
 tags:
-- 游戏
-- 谷歌
+  - 游戏
+  - 谷歌
 categories: 游戏
+abbrlink: 16ed9f72
+date: 2021-11-12 22:22:00
 ---
 # 前言
 这篇文章是安装pubg newstate并游玩的教程。

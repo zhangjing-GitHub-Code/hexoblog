@@ -88,7 +88,7 @@ music:
   type: playlist    #require song, playlist, album, search, artist
   id: 7660234225 # 503838841     #require	song id / playlist id / album id / search keyword
   fixed: true     # 开启吸底模式
-  autoplay: true   # 是否自动播放
+  autoplay: false   # 是否自动播放
   theme: '#42b983'
   loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
@@ -354,8 +354,10 @@ livere:
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
   enable: true
-  appId: Jo1swQmfLBjmWbGefA7HCxr0-MdYXbMMI # iPDMImYA34YIV4Wa3FH9cXBl-gzGzoHsz
-  appKey: hXuikr3OOMGx2av4DTPIFXyD # 4u76FWifmco4T46nI3QOV0dF
+  appId: Jo1swQmfLBjmWbGefA7HCxr0-MdYXbMMI
+# Jo1swQmfLBjmWbGefA7HCxr0-MdYXbMMI # iPDMImYA34YIV4Wa3FH9cXBl-gzGzoHsz
+  appKey: hXuikr3OOMGx2av4DTPIFXyD
+# hXuikr3OOMGx2av4DTPIFXyD # 4u76FWifmco4T46nI3QOV0dF
   notify: true
   verify: false
   visitor: true
@@ -363,6 +365,7 @@ valine:
   pageSize: 10
   placeholder: '请把我的歌 带回你的家~请把你的留言留下~' # Comment Box placeholder
   background: /medias/comment_bg.png
+  serverURLs: https://Jo1swQmf.api.lncldglobal.com # 把xxxxxxxx替换为自己AppID的前8位字符
   coolpushkey: 
 
 # The configuration of the MiniValine comment module is not activated by default.
@@ -384,8 +387,8 @@ changyan:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
-  title: Fork Me
+  url: https://github.com/zhangjing-GitHub-Code # blinkfox/hexo-theme-matery
+  title: Fark♂Me
 
 # The configuration of the Twikoo comment module is not activated by default.
 # To use it, activate the configuration item and set envId.

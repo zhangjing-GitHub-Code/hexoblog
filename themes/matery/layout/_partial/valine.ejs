@@ -86,35 +86,41 @@
     #vcomments h1 {
         font-size: 1.85rem;
         font-weight: bold;
+        margin: 3px;
         line-height: 2.2rem;
     }
 
     #vcomments h2 {
         font-size: 1.65rem;
         font-weight: bold;
+        margin: 3px;
         line-height: 1.9rem;
     }
 
     #vcomments h3 {
         font-size: 1.45rem;
         font-weight: bold;
+        margin: 3px;
         line-height: 1.7rem;
     }
 
     #vcomments h4 {
         font-size: 1.25rem;
         font-weight: bold;
+        margin: 3px;
         line-height: 1.5rem;
     }
 
     #vcomments h5 {
         font-size: 1.1rem;
         font-weight: bold;
+        margin: 3px;
         line-height: 1.4rem;
     }
 
     #vcomments h6 {
         font-size: 1rem;
+        margin: 3px;
         line-height: 1.3rem;
     }
 
@@ -242,7 +248,7 @@
     <div id="vcomments" class="card-content" style="display: grid">
     </div>
 </div>
-
+<!--script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script-->
 <script src="<%- theme.jsDelivr.url %><%- url_for('/libs/valine/av-min.js') %>"></script>
 <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.valine) %>"></script>
 <script>
@@ -256,8 +262,9 @@
         avatar: '<%- theme.valine.avatar %>',
         pageSize: '<%- theme.valine.pageSize %>',
         lang: '<% if (config.language == "zh-CN") {  %>zh-cn<% } else { %>en<% } %>',
-        master: ["5f5a400b4688a4db6540b56e4149f3ec"],
-        placeholder: '<%= theme.valine.placeholder %>'
+        master: ["5f5a400b4688a4db6540b56e4149f3ec","3ac6903d5db413fb90b57e4e49ddd3a0"],
+        placeholder: '<%= theme.valine.placeholder %>',
+        serverURLs: '<%= theme.valine.serverURLs %>'
     });
 </script>
 <%- partial('_partial/back-comment.ejs') %>

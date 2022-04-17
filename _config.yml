@@ -14,8 +14,8 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://zhangjing-github-code.github.io
-#permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink/
+permalink: :year/:month/:day/:title/
+  # permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -114,7 +114,7 @@ deploy:
 - type: git
   repo: git@github.com:zhangjing-GitHub-Code/zhangjing-GitHub-Code.github.io.git
   branch: master
- # - type: baidu_url_submitter
+- type: baidu_url_submitter
 symbols_count_time:
   symbols: true #是否统计字数
   time: true #是否统计阅读时长
