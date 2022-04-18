@@ -1,7 +1,7 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
-name: Node.js Package
+name: Node.js Gen Hexo
 
 on:
   push:
@@ -18,5 +18,10 @@ jobs:
           node-version: 14
       - run: npm install --registry=https://registry.npm.taobao.org
       - run: npm install hexo -g --registry=https://registry.npm.taobao.org
+      - name: setup git identify
+        run: |
+          git config --global user.email "zhangjing20091105@126.com"
+          git config --global user.name "zhangjing-GitHub-Code"
+          echo "https://zhangjing-github-code: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@github.com" >~/.git-credentials
       - name: gen hexo
         run: hexo cl && hexo g && hexo d
