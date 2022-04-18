@@ -112,7 +112,7 @@ theme: matery
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
 - type: git
-  repo: git@github.com:zhangjing-GitHub-Code/zhangjing-GitHub-Code.github.io.git
+  repo: https://github.com:zhangjing-GitHub-Code/zhangjing-GitHub-Code.github.io.git
   branch: master
 - type: baidu_url_submitter
 symbols_count_time:
