@@ -27,4 +27,6 @@ jobs:
       - name: gen hexo
         run: hexo cl && hexo g
       - name: deploy hexo
-        run: hexo d
+        run: |
+          export GITHUB_TOKEN=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
+          hexo d
