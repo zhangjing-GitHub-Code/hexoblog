@@ -22,6 +22,9 @@ jobs:
         run: |
           git config --global user.email "zhangjing20091105@126.com"
           git config --global user.name "zhangjing-GitHub-Code"
-          echo "https://zhangjing-github-code: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@github.com" >~/.git-credentials
+          git config --global credential.helper store
+          bash -c "echo \"https://zhangjing-github-code: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@github.com\" >~/.git-credentials"
       - name: gen hexo
-        run: hexo cl && hexo g && hexo d
+        run: hexo cl && hexo g
+      - name: deploy hexo
+        run: hexo d
