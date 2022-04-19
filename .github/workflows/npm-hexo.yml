@@ -2,7 +2,7 @@
 # FUCKED: For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
 name: Node.js Gen Hexo
-GITHUB_TOKEN : ${{ secrets.GHPT }}
+
 on:
   push:
   workflow_dispatch:
@@ -27,6 +27,8 @@ jobs:
       - name: gen hexo
         run: hexo cl && hexo g
       - name: deploy hexo
+        with:
+          GITHUB_TOKEN: ${{ secrets.GHPT }}
         run: |
-          export GITHUB_TOKEN=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
+          #export GITHUB_TOKEN=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
           hexo d
