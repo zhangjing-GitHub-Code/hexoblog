@@ -29,6 +29,4 @@ jobs:
       - name: deploy hexo
         with:
           GITHUB_TOKEN: ${{ secrets.GHPT }}
-        run: |
-          #export GITHUB_TOKEN=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
-          hexo d
+        run: hexo d
