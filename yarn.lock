@@ -1442,10 +1442,10 @@ hexo-i18n@^1.0.0:
   dependencies:
     sprintf-js "^1.0.3"
 
-hexo-lazyload-image@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/hexo-lazyload-image/-/hexo-lazyload-image-1.0.10.tgz#08a67e724590371ef49b77c88eab51d5d367f32e"
-  integrity sha512-sbmO1b4GOEK2zshHAlPfPC9ZCpcAZ7E9PEeZkgDyHKoVjUwSQy6noQfejYiC48j9TV3/Bvyscx4ESol8PXVBEQ==
+hexo-lazyload-image@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/hexo-lazyload-image/-/hexo-lazyload-image-1.0.12.tgz#b5df417c0c4507c3ad0476619ca6513178fea252"
+  integrity sha512-FYtWS3MnEesDqDKwxGIoGG8j5m8jzJAJoDa22rEsztI/fYxtnXZzypinyADRlOczXQLHqKqtjBR+rdpnynJtJQ==
   dependencies:
     uglify-js "^3.0.27"
 
